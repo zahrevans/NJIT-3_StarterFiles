@@ -117,5 +117,12 @@ body {
 #github{
 	font-size: small;
 }
-
+.likecolor{
+    background-color: #4CAF50;
+    color: white;
+}
+.dislikecolor{
+    background-color: #f44336;
+    color: white;
+}
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
