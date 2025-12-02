@@ -41,7 +41,7 @@
                 class="poster img-fluid"
                 :src="movie.posters[movie.posterindex]"
               />
-              <div class="imageInfo">{{movie.posterindex}}</div>
+              <div class="imageInfo">{{movie.posterindex + 1}} of {{movie.posters.length}}</div>
 
               <p class="title">{{movie.title}} ({{movie.country}})</p>
               <p class="score">
