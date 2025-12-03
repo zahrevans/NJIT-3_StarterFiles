@@ -18,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
     <!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
@@ -34,6 +34,352 @@
 
       <div class="main">
         <div class="row">
+          <section id="background" class="tile">
+            <div class="card-wrap">
+              <div class="statusbar" aria-hidden="true">
+                <span id="hour"></span>
+                <div class="sb-icons">
+                  <span class="sb-dot"></span>
+                  <span class="sb-batt"
+                    ><span class="sb-batt-fill"></span
+                  ></span>
+                </div>
+              </div>
+
+              <!-- 3D Carousel -->
+              <div class="carousel" aria-roledescription="carousel">
+                <button class="nav prev" aria-label="Vorherige Karte">‹</button>
+
+                <div
+                  class="deck"
+                  id="deck"
+                  role="region"
+                  aria-label="Produktkarussell"
+                >
+                  <!-- Karte 1 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 1"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Smart Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Smart Watch</h2>
+                      <p class="product-sub">100% waterproof</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">24</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <!-- Karte 2 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 2"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Sport Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Sport Watch</h2>
+                      <p class="product-sub">Rugged • GPS</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">29</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <!-- Karte 3 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 3"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Classic Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Classic Watch</h2>
+                      <p class="product-sub">Leather band</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">32</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <!-- Karte 4 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 4"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Pro Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Pro Watch</h2>
+                      <p class="product-sub">AMOLED • LTE</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">39</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <!-- Karte 5 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 5"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Mini Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Mini Watch</h2>
+                      <p class="product-sub">Compact • Light</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">19</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <!-- Karte 6 -->
+                  <article
+                    class="product-card"
+                    role="group"
+                    aria-label="Produktkarte 6"
+                  >
+                    <div class="product-media">
+                      <img
+                        src="https://i.imgur.com/Mplj1YR.png"
+                        alt="Ultra Watch"
+                        width="220"
+                        height="220"
+                      />
+                      <div class="media-reflection"></div>
+                    </div>
+                    <header class="product-head">
+                      <h2 class="product-name">Ultra Watch</h2>
+                      <p class="product-sub">Titan • 100m</p>
+                    </header>
+                    <div class="product-ctrl">
+                      <div class="qtty">
+                        <button
+                          class="btn minus"
+                          type="button"
+                          aria-label="Menge verringern"
+                        >
+                          −
+                        </button>
+                        <output
+                          class="qtty-val"
+                          aria-live="polite"
+                          aria-atomic="true"
+                          >1</output
+                        >
+                        <button
+                          class="btn plus"
+                          type="button"
+                          aria-label="Menge erhöhen"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div class="price">
+                        <span class="price-curr">$</span>
+                        <span class="price-val">59</span>
+                      </div>
+                    </div>
+                    <button class="cta" type="button">
+                      <span class="cta-gloss"></span>
+                      Add to Cart
+                    </button>
+                  </article>
+                </div>
+
+                <button class="nav next" aria-label="Nächste Karte">›</button>
+              </div>
+            </div>
+          </section>
+
           <div class="col-md-6" v-for="(movie, index) in movies">
             <div class="thumbnail">
               <img
@@ -57,7 +403,7 @@
               <p class="websites">Websites: <a> imdb </a> | <a>website</a></p>
 
               <div class="social">
-                <p class="likes likecolor" @click="like(index)" >
+                <p class="likes likecolor" @click="like(index)">
                   <i class="bi bi-hand-thumbs-up" aria-hidden="true"></i>
                   {{movie.likes}}
                 </p>
@@ -85,6 +431,8 @@
     </div>
     <!-- step5 done in step 2-->
     <!-- This load the Vue.js code -->
+    <script type="text/javascript" src="carousel.js"></script>
+
     <script type="text/javascript" src="site.js"></script>
   </body>
 </html>
