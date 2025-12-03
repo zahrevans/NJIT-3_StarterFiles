@@ -68,5 +68,51 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "A Silent Voice",
+            "iscore": 8.2,
+            "rating": "N/A",
+            "runtime": 130,
+            "released": [2016,9, 17],
+            "country": "Japan",
+            "posters": ["img/asv.jpg", "img/asv2.jpg", "img/asv3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt5323662/?ref_=nv_sr_srsg_2_tt_6_nm_0_in_0_q_a%2520silent",
+            "website": "https://www.kyotoanimation.co.jp/en/works/koeMovie/",
+            "likes": 1021,
+            "dislikes": 122,
+            "posterindex": 0
+      },
+      {
+            "title": "Spider-Man: Across the Spider-Verse",
+            "iscore": 8.5,
+            "rating": "PG",
+            "runtime": 200,
+            "released": [2023, 6, 2],
+            "country": "USA",
+            "posters": ["img/spdrman.jpg", "img/spdrman2.jpg", "img/spdrman3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt9362722/mediaviewer/rm1009725185/?ref_=tt_ov_i1",
+            "website": "https://www.sonypictures.com/movies/spidermanacrossthespiderverse",
+            "likes": 1021,
+            "dislikes": 122,
+            "posterindex": 0
+      },
+      {
+            "title": "Chainsaw Man - The Movie: Reze Arc",
+            "iscore": 8.5,
+            "rating": "R",
+            "runtime": 100,
+            "released": [2025, 10, 24],
+            "country": "Japan",
+            "posters": ["img/csm.jpg", "img/csm2.jpg", "img/csm3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt30472557/?ref_=nv_sr_srsg_1_tt_7_nm_1_in_0_q_chainsaw",
+            "website": "https://chainsawman.movie/",
+            "likes": 1021,
+            "dislikes": 122,
+            "posterindex": 0
       }
+
+
+
+
 ]
